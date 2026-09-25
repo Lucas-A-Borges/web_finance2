@@ -116,14 +116,14 @@ export default function App() {
               fontSize: 12, fontWeight: 700, color: '#f5f0eb', flexShrink: 0
             }}>MC</div>
             <div style={{ minWidth: 0 }}>
-              <div style={{ fontWeight: 600, fontSize: 12, color: '#f5f0eb', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>Mariana Costa</div>
-              <div style={{ fontSize: 10, color: '#78716c', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>mariana@email...</div>
+              <div style={{ fontWeight: 600, fontSize: 12, color: '#f5f0eb', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>Lucas e Camila</div>
+              <div style={{ fontSize: 10, color: '#78716c', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>Lucas@email...</div>
             </div>
             <span style={{ fontSize: 10, color: '#78716c', marginLeft: 'auto' }}>▾</span>
           </div>
         </div>
 
-        {/* Nav */}
+        {/* Nav */}//barra esquerda
         <nav style={{ flex: 1, padding: '12px 8px', display: 'flex', flexDirection: 'column', gap: 2 }}>
           {navItems.map(item => {
             const active = activeNav === item.label
@@ -208,7 +208,7 @@ export default function App() {
               key={tab}
               onClick={() => setActiveTab(tab)}
               style={{
-                padding: '10px 20px', border: 'none', background: 'transparent',
+                padding: '1px 20px', border: 'none', background: 'transparent',
                 fontSize: 13, fontWeight: activeTab === tab ? 600 : 400,
                 color: activeTab === tab ? '#1c1917' : '#78716c',
                 borderBottom: activeTab === tab ? '2px solid #1c1917' : '2px solid transparent',
@@ -222,10 +222,10 @@ export default function App() {
         </div>
 
         {/* Content */}
-        <div style={{ flex: 1, padding: '24px 32px', display: 'flex', flexDirection: 'column', gap: 20, overflowY: 'auto' }}>
+        <div style={{ flex: 1, padding: '1px 16px', display: 'flex', flexDirection: 'column', gap: 0, overflowY: 'auto' }}>
 
-          {/* Transactions card */}
-          <div style={{ background: '#fff', borderRadius: 16, padding: '24px', border: '1px solid #e7e2dc' }}>
+          {/* Transactions card */}//borda branca da tabela
+          <div style={{ background: '#fff', borderRadius: 16, padding: '24px', border: '0px solid #e7e2dc' }}>
             <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: 20 }}>
               <div>
                 <div style={{ fontWeight: 700, fontSize: 16, color: '#1c1917' }}>Transações recentes</div>
