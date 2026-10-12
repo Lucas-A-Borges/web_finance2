@@ -1,6 +1,7 @@
 import { useMemo, useRef, useState } from 'react'
 import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts'
 import { projectId, publicAnonKey } from '../utils/supabase/info'
+import { supabase } from './supabaseClient'; // Ajuste o caminho dependendo de onde salvou o supabaseClient.ts
 
 // ─── Sidebar nav ──────────────────────────────────────────────────────────────
 
@@ -974,7 +975,9 @@ export default function App() {
   async function saveAllData() {
     setSyncStatus('saving')
     try {
-      const response = await fetch(`https://${projectId}.supabase.co/functions/v1/make-server-c1153085/finance-data`, {
+      //const response = await fetch(`https://${projectId}.supabase.co/functions/v1/make-server-c1153085/finance-data`,
+      const response = await fetch(`https://${projectId}.supabase.co/functions/v1/server/finance-data`,
+         {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
