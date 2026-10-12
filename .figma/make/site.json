@@ -1,0 +1,11 @@
+{
+  "title": "labfinance",
+  "description": "Create stunning website layouts effortlessly with this intuitive design tool, perfect for designers and businesses looking to enhance their online presence.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
