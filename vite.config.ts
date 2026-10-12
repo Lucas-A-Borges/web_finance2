@@ -18,6 +18,9 @@ export default defineConfig(({ mode }) => {
       minify: !emitSourcemaps,
     },
     plugins: [
+
+
+      
 react(),
       tailwindcss(),
       figmaSiteConfiguration(siteConfiguration),
